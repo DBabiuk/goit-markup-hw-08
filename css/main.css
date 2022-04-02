@@ -689,16 +689,14 @@ img {
 }
 
 .team__elem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-right: 10px;
+}
+
+.team__elem:last-child {
+  margin-right: 0;
+}
+
+.team__elem .team__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -707,23 +705,18 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team__elem:last-child {
-  margin-right: 0;
+.team__elem .team__link:hover, .team__elem .team__link:focus {
+  background-color: #2196F3;
 }
 
-.team__elem:hover, .team__elem:focus {
-  background-color: #2196F3;
+.team__elem .team__link:hover svg, .team__elem .team__link:focus svg {
+  fill: #FFFFFF;
 }
 
 .team__svg {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team__elem:hover .team__svg,
-.team__elem:focus .team__svg {
-  fill: #FFFFFF;
 }
 
 .footer {
@@ -818,16 +811,14 @@ img {
 }
 
 .join__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-right: 10px;
+}
+
+.join__item:last-child {
+  margin-right: 0;
+}
+
+.join__item .join__link {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -837,11 +828,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join__item:last-child {
-  margin-right: 0;
-}
-
-.join__item:hover, .join__item:focus {
+.join__item .join__link:hover, .join__item .join__link:focus {
   background-color: #2196F3;
 }
 
@@ -867,6 +854,14 @@ img {
 
 .adress__item {
   margin-bottom: 9px;
+}
+
+.adress__item:hover a {
+  color: #2196F3;
+}
+
+.adress__item a:focus {
+  color: #2196F3;
 }
 
 .adress__item:last-child {
@@ -1048,6 +1043,14 @@ img {
           justify-content: center;
 }
 
+.customers__link:hover, .customers__link:focus {
+  border-color: #2196F3;
+}
+
+.customers__link:hover svg, .customers__link:focus svg {
+  fill: #2196F3;
+}
+
 .customers__svg {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1111,7 +1114,7 @@ img {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  color: v #212121;
+  color: #212121;
   background: #F5F4FA;
   border: none;
   border-radius: 4px;

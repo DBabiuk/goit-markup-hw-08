@@ -71,6 +71,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+        svg{
+            fill: $accent-color;
+        }
+    }
 }
 
 .customers__svg {

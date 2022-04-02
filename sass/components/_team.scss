@@ -94,12 +94,12 @@
     }
 }
 
-
-.team__elem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.team__elem{
     margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+    .team__link{
     width: 44px;
     height: 44px;
 
@@ -107,24 +107,52 @@
     cursor: pointer;
     transition: background-color $duration $timing-function;
 
-    &:last-child {
-        margin-right: 0;
-    }
+    
 
     &:hover,
     &:focus {
         background-color: $accent-color;
+        svg{
+            fill: $primary-white-color;
+        }
     }
 }
-
+}
 
 .team__svg {
     fill: #afb1b8;
-
     transition: fill $duration $timing-function;
-
-    .team__elem:hover &,
-    .team__elem:focus & {
-        fill: $primary-white-color;
-    }
 }
+// .team__elem {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-right: 10px;
+//     width: 44px;
+//     height: 44px;
+
+//     border-radius: 50%;
+//     cursor: pointer;
+//     transition: background-color $duration $timing-function;
+
+//     &:last-child {
+//         margin-right: 0;
+//     }
+
+//     &:hover,
+//     &:focus {
+//         background-color: $accent-color;
+//     }
+// }
+
+
+// .team__svg {
+//     fill: #afb1b8;
+
+//     transition: fill $duration $timing-function;
+
+//     .team__elem:hover &,
+//     .team__elem:focus & {
+//         fill: $primary-white-color;
+//     }
+// }
